@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Link dotfiles
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+
+if [ $SPIN ]; then
+  # Install packages
+  sudo apt-get install -y ripgrep
+fi
