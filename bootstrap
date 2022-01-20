@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# Link dotfiles
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-
 if [ $SPIN ]; then
+  # Link dotfiles
+  ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+
   # Install packages
   sudo apt-get install -y ripgrep
+else
+  # Link dotfiles
+  ln -sf $PWD/.gitconfig ~/.gitconfig
 fi
