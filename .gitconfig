@@ -167,3 +167,7 @@
 [init]
 
 	defaultBranch = main
+
+[user]
+	name = Marius Bieliauskas
+	email = marius.bieliauskas@shopify.com
